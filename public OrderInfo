@@ -1,0 +1,66 @@
+public OrderInfo()
+        {
+        
+        private string ItemName {get; set}
+        private string ItemType {get: set}
+        private float ItemPrice {get; set}
+        private float MatTax {get; set;}
+        
+        public OrderInfo(string ItemName, string ItemType, float MatTax, float ItemPrice)
+        {
+            this.ItemName = "No Name;
+            this.ItemType = "No Type;
+            this.ItemPrice = 0.0f; 
+            this.MatTax = 0.0f;
+            numOfItems++;
+        }
+ 
+        
+        static int numOfItems = 0;
+ 
+        public static int GetNumOfItems()
+        {
+            return numOfItems;
+        }
+ 
+        public string toString()
+        {
+            return String.Format("Item is {0} of type {1}. Price is {2} and has a tax of {3}", ItemName, ItemType, ItemPrice, MatTax);
+        }
+ 
+
+        private class OrderItems: ISerializable() {
+
+
+            static int[,] mdArray = {};
+
+
+        }
+
+        public int getMatTax(float tax = 0.0f)
+        {
+            foreach (int i = 0; i < mdArray.GetLength(0); i++;)
+            {
+                if (mdArray[i] <> "material") 
+                {
+                    tax = 0.0f
+                }
+
+                else {
+                    return tax;
+                    }
+                }
+
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            OrderInfo ItemName = new ItemName("FidgetSpinner", "Servicable", 9.99f, 0.00f)
+            OrderInfo ItemName = new ItemName("PugTreats", "Material", 5.47f, .08f)
+            
+                return OrderInfo.getMatTax 
+        }
+            
+    }
+ }
